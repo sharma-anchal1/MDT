@@ -6,14 +6,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="top"
-    tools:context=".display">
+    android:background="#F5F5DC"
+    tools:context=".battery">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/BatteryInfoAppBar"
+        android:id="@+id/DisplayInfoAppBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        app:title="Display Properties "
+        app:title="Display "
         app:titleTextColor="@android:color/white"/>
 
     <androidx.cardview.widget.CardView
@@ -33,8 +34,8 @@
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/ic_launcher_background"
-                android:contentDescription="Device Icon" />
+                android:src="@drawable/display"
+                android:contentDescription="Display Icon" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,9 +47,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5020 mAh (typical Li Polymer)"
+                    android:text="AMOLED, 90Hz, 1300 nits (peak)"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+
+                    android:textStyle="bold"
+                    android:padding="16dp"
+                    />
 
             </LinearLayout>
         </LinearLayout>
@@ -71,12 +75,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="top"
-            tools:context=".BatteryInfo">
+            tools:context=".DisplayInfo">
+
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Built-in rechargeable battery"
+                android:text=" Size:6.38 inches, 98.3 cm2 (~84.1% screen-to-body ratio)"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="16dp" />
@@ -84,10 +90,18 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="USB Type-C reversible connector port"
+                android:text=" Resolution:1080 x 2400 pixels, 20:9 ratio (~413 ppi density)"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Protection:Schott Xensation glass"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="16dp" />
+
 
 
             <LinearLayout

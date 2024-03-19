@@ -7,14 +7,14 @@
     android:orientation="vertical"
     android:gravity="top"
     android:background="#F5F5DC"
-    tools:context=".battery">
+    tools:context=".sensors">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/BatteryInfoAppBar"
+        android:id="@+id/SensorsInfoAppBar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        app:title="Charging and Battery "
+        app:title="Sensors"
         app:titleTextColor="@android:color/white"/>
 
     <androidx.cardview.widget.CardView
@@ -34,7 +34,7 @@
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:src="@drawable/ic_launcher_background"
+                android:src="@drawable/sensors"
                 android:contentDescription="Device Icon" />
 
             <LinearLayout
@@ -47,7 +47,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Li-Ion 2716 mAh, non-removable (10.35 Wh)"
+                    android:text=" Sensors Info"
                     android:textSize="18sp"
 
                     android:textStyle="bold"
@@ -82,18 +82,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" Charging:15W wired, PD2.0, 50% in 30 min (advertised)
-Wireless (Qi)"
+                android:text="Sensors Used:Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="16dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" Talk Time:Up to 21 h (3G)"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:padding="16dp" />
+
 
 
             <LinearLayout
